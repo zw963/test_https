@@ -1,7 +1,7 @@
-role :web, %w{test_https@47.88.161.160}
-role :app, %w{test_https@47.88.161.160}
-role :db, %w{test_https@47.88.161.160}
-role :worker, %w{test_https@47.88.161.160}
+role :web, %w{test_https@45.79.143.14}
+role :app, %w{test_https@45.79.143.14}
+role :db, %w{test_https@45.79.143.14}
+role :worker, %w{test_https@45.79.143.14}
 
 set :branch, 'dev'
 set :deploy_to, "/data_1/www/#{fetch(:application)}/#{fetch(:application)}_#{fetch(:stage)}"
