@@ -4,7 +4,7 @@ upstream test_https_app_server {
 
 server {
   listen 80;
-  server_name https1.zw963.online;
+  server_name test.zw963.xthinkapp.com;
 
   location ~ \.(aspx|php|jsp|cgi)$ {
      return 410;
