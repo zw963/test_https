@@ -28,18 +28,6 @@ server {
       add_header Cache-Control public;
       add_header Access-Control-Allow-Origin *;
    }
-
-    listen 443 ssl; # managed by Certbot
-ssl_certificate /etc/letsencrypt/live/https1.zw963.online/fullchain.pem; # managed by Certbot
-ssl_certificate_key /etc/letsencrypt/live/https1.zw963.online/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-
-
-    # Redirect non-https traffic to https
-    # if ($scheme != "https") {
-    #     return 301 https://$host$request_uri;
-    # } # managed by Certbot
-
 }
 
 # server {
